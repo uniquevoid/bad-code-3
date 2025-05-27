@@ -1,0 +1,38 @@
+# bad_script.py
+
+import math, os
+
+def calc(x,y):
+    return x+y
+
+def CALC(x,y):
+    return x+y
+
+def process():
+    a = 5
+    b = 10
+    c = a + b
+    d = 42  # unused variable
+
+    for i in range(0, 10):
+        for j in range(0, 10):
+            print("i * j =", i * j)
+
+    if c > 5:
+        print("Greater than five")
+    else:
+        if c < 5:
+            print("Less than five")
+        else:
+            print("Equal to five")
+
+def main():
+    print("Result1:", calc(2,3))
+    print("Result2:", CALC(4,5))
+    process()
+    try:
+        1/0
+    except:
+        pass
+
+main()
